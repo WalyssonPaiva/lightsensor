@@ -36,7 +36,7 @@ try:
         light_level = rc_time(pin_to_circuit)
         #print(rc_time(pin_to_circuit))
         ledpin = 16
-        if light_level < 20:
+        if light_level > 20:
             GPIO.output(ledpin,GPIO.HIGH)
             print("luz")
         else:
