@@ -38,8 +38,11 @@ try:
         ledpin = 16
         if light_level < 20:
             GPIO.output(ledpin,GPIO.HIGH)
+            print("luz")
         else:
             GPIO.output(ledpin,GPIO.LOW)
+            print("não luz")
+
 except KeyboardInterrupt:
     pass
 finally:
