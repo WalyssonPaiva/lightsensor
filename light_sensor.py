@@ -7,6 +7,7 @@ __author__ = 'Adapted from Adafruit'
 __license__ = "GPL"
 
 GPIO.setmode(GPIO.BOARD)
+GPIO.setup(16, GPIO.OUT, initial=GPIO.LOW) 
 
 #define the pin that goes to the circuit
 pin_to_circuit = 29
